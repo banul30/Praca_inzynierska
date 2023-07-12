@@ -1,0 +1,217 @@
+
+================================ UL ================================
+-   POST nowy ul
+localhost:8080/api/tests/ul/add
+
+    {
+        "nazwa": "ul6",
+        "rodzajRamek": "średnie",
+        "rodzajKorpusu": "stalowy",
+        "poziomAgresji": "wysoki",
+        "matkaPszczela": {
+            "dataWprowadzenia": "2022-05-02T22:00:00Z",
+            "rodzajPozyskania": "Znaleziona na polu"
+        },
+        "waga": null
+    }
+
+-   GET ule
+localhost:8080/api/tests/ul
+
+-   DELETE ul
+localhost:8080/api/tests/ul/delete/5
+
+-   PUT ul
+localhost:8080/api/tests/ul/update/1
+
+    {
+        "nazwa": "ulKURWA11",
+        "rodzajRamek": "średnieeeee",
+        "rodzajKorpusu": "stalowyyyyy",
+        "poziomAgresji": "wysokiiiiii",
+        "pasiekaId": "4",
+        "matkaPszczela": {
+            "dataWprowadzenia": "2022-05-02T22:00:00Z",
+            "rodzajPozyskania": "Znaleziona na poluuuuuuuuuu"
+        },
+        "wagaId": 2
+    }
+
+
+
+================================ WAGA ================================
+-   GET waga
+localhost:8080/api/tests/waga
+
+-   POST waga
+localhost:8080/api/tests/waga/add
+    {
+        "producent": "xxxxxxxxxx",
+        "model": "miodek",
+        "rokProdukcji": 1984
+    }
+
+-   PUT waga
+localhost:8080/api/tests/waga/put/2
+    {
+        "producent": "mras",
+        "model": "eeb",
+        "rokProdukcji": 2021
+    }
+
+-   DELETE waga
+localhost:8080/api/tests/waga/delete/2
+
+================================ PASIEKA ================================
+-   GET pasieki
+localhost:8080/api/tests/pasieka
+
+-   POST pasieka
+localhost:8080/api/tests/pasieka/add
+    {
+        "nazwa": "nowaPasiekaChujChuj",
+        "lokalizacja": "WWA pałac kultury kurwa"
+
+    }
+
+
+-   DELETE pasieka
+localhost:8080/api/tests/pasieka/delete/4
+
+================================ ALERT POGODOWY ================================
+-   GET alert
+localhost:8080/api/tests/alertPogodowy
+
+-   GET alert dla lokalizacji
+localhost:8080/api/tests/alertPogodowy/Warszawa
+
+-   POST alert
+localhost:8080/api/tests/alertPogodowy/add
+    {
+        "lokalizacja": "Białowory",
+        "informacja": "lorem ipsumory"
+    }
+
+-   PUT alert
+localhost:8080/api/tests/alertPogodowy/put/1
+    {
+        "lokalizacja": "Białdworyyy",
+        "informacja": "lorem ipsumoryyyyy"
+    }
+
+-   DELETE alert
+localhost:8080/api/tests/alertPogodowy/delete/1
+
+
+
+================================ Predykcja ================================
+-   GET predykcja
+localhost:8080/api/tests/predykcja
+
+-   POST predykcja
+localhost:8080/api/tests/predykcja/add
+    {
+        "wspolczynnik": "tmp555"
+    }
+
+-   PUT predykcja
+localhost:8080/api/tests/predykcja/put/2
+    {
+        "wspolczynnik": "tmpóóóóó"
+    }
+
+-   DELETE predykcja
+localhost:8080/api/tests/predykcja/delete/3
+
+
+
+================================ Subskrypcja ================================
+-   GET subskrypcja
+localhost:8080/api/tests/subskrypcja
+
+-   POST subskrypcja
+localhost:8080/api/tests/subskrypcja/add
+    {
+        "uzytkownikId": 2
+    }
+
+-   DELETE subskrypcja
+localhost:8080/api/tests/subskrypcja/delete/1
+
+
+
+================================ Uzytkownik ================================
+-   GET uzytkownik
+localhost:8080/api/tests/uzytkownik
+
+
+-   POST uzytkownik
+localhost:8080/api/tests/uzytkownik/add
+    {
+        "imie": "Piotr",
+        "nazwisko": "Czajkowski",
+        "login": "piotrC",
+        "haslo": "pass",
+        "mail": "pc@xyz.com"
+    }
+
+-   PUT uzytkownik
+localhost:8080/api/tests/uzytkownik/put/2
+    {
+        "imie": "Annaaaaa",
+        "nazwisko": "Malinowskaaaaaaaa",
+        "login": "annaMmmmmmmm",
+        "haslo": "passssssssssss",
+        "mail": "am@xyz.commmmmmm"
+    }
+
+
+-   DELETE uzytkownik
+localhost:8080/api/tests/uzytkownik/delete/1
+
+
+
+==============================POKARM===============================
+-POST pokarm
+localhost:8080/api/tests/pokarm/add
+    {
+        "rodzaj": "cukier kurwa2",
+        "masa": 10002
+    }
+-PUT pokarm
+localhost:8080/api/tests/pokarm/put/1
+
+  {
+        "rodzaj": "cukier z puta",
+        "masa": 6969
+    }
+-DELETE pokarm:
+localhost:8080/api/tests/pokarm/delete/1
+
+=========================CHOROBA================================
+-POST choroba
+localhost:8080/api/tests/choroba/add
+{
+    "aktywna": true,
+    "nazwa": "covid231",
+    "opis": "w chuj mordercza"
+}
+-PUT choroba
+localhost:8080/api/tests/choroba/put/1
+{
+    "aktywna": false,
+    "nazwa": "covid2312",
+    "opis": "w chuj mordercza2"
+}
+-DELETE choroba
+localhost:8080/api/tests/choroba/delete/1
+
+
+=============================ALERT=======================  <<analogicznie
+-POST alert
+
+-PUT alert
+
+-DELETE alert
+
+============================================================
